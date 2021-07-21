@@ -24,7 +24,8 @@ const autoCompleteConfig = {
     if (response.data.Error) {
       return [];
     }
-
+    
+    console.log(response.data);
     return response.data.Search;
   }
 };
